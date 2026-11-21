@@ -12,6 +12,9 @@ h1{font-size:clamp(28px,3.2vw,60px);margin:2% 0 0;letter-spacing:-.04em;line-hei
 .micro{color:var(--muted);font-size:clamp(14px,1.1vw,23px);line-height:1.4;margin-top:6%;}
 .plot{width:100%;height:100%;min-height:180px}
 .bottom{margin-top:1%;padding-top:1%;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:2%;font-size:clamp(12px,1vw,19px);color:var(--muted)}
+.replay{flex-shrink:0;align-self:center;padding:2px 5px;border:0;background:transparent;color:var(--ink);font:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.replay:disabled{color:var(--muted);cursor:default}
+.replay:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 small{font-size:inherit}
 @media(max-width:750px){.stage{padding:4%}.center{flex-direction:column;justify-content:center;gap:0}.left{flex:auto;max-width:100%;width:100%;text-align:center}.right{width:100%;height:45%;flex:auto}.number{font-size:55px}.bottom{font-size:11px}}
 .compplot{flex:1;min-height:0;width:100%;margin-top:1%}.compplot .plotly-graph-div{height:100%!important}.stage h1{margin-top:2%}.plot>div,.compplot>div{height:100%}.plot .plotly-graph-div,.compplot .plotly-graph-div{height:100%!important}</style></head><body>
@@ -3899,6 +3902,122 @@ maplibre-gl/dist/maplibre-gl.js:
 
 window.Plotly = Plotly;
 return Plotly;
-}));</script>                <div id="comparacao-plotly" class="plotly-graph-div" style="height:580px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("comparacao-plotly")) {                    Plotly.newPlot(                        "comparacao-plotly",                        [{"cliponaxis":false,"customdata":[["645 milhões","7,8%"],["2,1 bilhões","25,8%"],["2,69 bilhões","32,7%"]],"hovertemplate":"\u003cb\u003e%{y}\u003c\u002fb\u003e\u003cbr\u003ePessoas: %{customdata[0]}\u003cbr\u003eParcela da população: %{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":["#D96650","#C49037","#118D80"]},"name":"Número de pessoas","orientation":"h","text":["645 milhões","2,1 bilhões","2,69 bilhões"],"textfont":{"color":"#172338","size":23},"textposition":"outside","x":[0.645,2.1,2.69],"y":["Fome","Insegurança alimentar\nmoderada ou grave","Dieta saudável\neconomicamente inacessível"],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"font":{"family":"Arial, sans-serif","color":"#172338","size":20},"margin":{"l":265,"r":145,"t":75,"b":75},"xaxis":{"range":[0,3.35],"title":{"text":"Pessoas (bilhões)"},"gridcolor":"#E7ECF1","zeroline":false,"ticksuffix":" bi"},"yaxis":{"tickfont":{"size":21},"autorange":"reversed","automargin":true},"hoverlabel":{"font":{"size":19}},"paper_bgcolor":"#F8FAFC","plot_bgcolor":"#F8FAFC","bargap":0.48,"showlegend":false,"updatemenus":[{"buttons":[{"args":[{"x":[[0.645,2.1,2.69]],"text":[["645 milhões","2,1 bilhões","2,69 bilhões"]]},{"xaxis":{"range":[0,3.35],"title":"Pessoas (bilhões)","gridcolor":"#E7ECF1","zeroline":false,"ticksuffix":" bi"}}],"label":"Pessoas (bilhões)","method":"update"},{"args":[{"x":[[7.8,25.8,32.7]],"text":[["7,8%","25,8%","32,7%"]]},{"xaxis":{"range":[0,38],"title":"Proporção da população mundial (%)","gridcolor":"#E7ECF1","zeroline":false,"ticksuffix":"%"}}],"label":"Prevalência (%)","method":"update"}],"direction":"right","showactive":true,"type":"buttons","x":0.01,"xanchor":"left","y":1.2,"yanchor":"top"}]},                        {"displayModeBar": true, "displaylogo": false, "responsive": true, "modeBarButtonsToRemove": ["lasso2d", "select2d", "toImage"]}                    )                };            </script>        </div></div>
-<footer class="bottom"><span>Fonte: FAO et al., SOFI 2026 · Dados de 2025</span><span>Os indicadores podem se sobrepor; não some os totais.</span></footer></div>
+}));</script>                <div id="comparacao-plotly" class="plotly-graph-div" style="height:580px; width:100%;"></div>            <script>
+function setupComparisonEntrance(plot) {
+    const replay = document.getElementById('replay-animation');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const percentage = new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 1 });
+    const population = new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 });
+    const duration = 1450;
+
+    const units = plot.layout.updatemenus[0].buttons.map(({ args }, index) => {
+        const [{ x: [values], text: [labels] }, layout] = args;
+        return { values, labels, layout, isPercentage: index === 1 };
+    });
+
+    let unitIndex = 0;
+    let inViewport = false;
+    let showing = false;
+    let axisNeedsUpdate = false;
+    let drawing = false;
+    let frameId;
+    let animation;
+
+    function formatValue(value, isPercentage) {
+        if (isPercentage) return percentage.format(value) + '%';
+        const millions = Math.round(value * 1000);
+        if (millions < 1000) {
+            return millions + (millions === 1 ? ' milhão' : ' milhões');
+        }
+        const billions = population.format(millions / 1000);
+        return billions + (billions === '1' ? ' bilhão' : ' bilhões');
+    }
+
+    function requestRender() {
+        if (showing && !drawing && frameId === undefined) {
+            frameId = requestAnimationFrame(renderFrame);
+        }
+    }
+
+    async function renderFrame(time) {
+        frameId = undefined;
+        const currentAnimation = animation;
+        let fraction = 1;
+        if (currentAnimation && !reduceMotion.matches) {
+            currentAnimation.startTime ??= time;
+            fraction = Math.min(1, (time - currentAnimation.startTime) / duration);
+        }
+
+        const progress = fraction * fraction * (3 - 2 * fraction);
+        const { values, labels, layout, isPercentage } = units[unitIndex];
+        const x = values.map(value => value * progress);
+        const text = fraction === 1 ? labels : x.map(value => formatValue(value, isPercentage));
+        const data = { x: [x], text: [text] };
+
+        drawing = true;
+        try {
+            if (axisNeedsUpdate) {
+                axisNeedsUpdate = false;
+                await Plotly.update(plot, data, layout, [0]);
+            } else {
+                await Plotly.restyle(plot, data, [0]);
+            }
+        } catch (error) {
+            animation = undefined;
+            console.error('Não foi possível animar o gráfico comparativo.', error);
+        } finally {
+            drawing = false;
+            if (animation === currentAnimation && fraction === 1) animation = undefined;
+            replay.disabled = Boolean(animation);
+            if (animation || axisNeedsUpdate) requestRender();
+        }
+    }
+
+    function play() {
+        animation = {};
+        replay.disabled = true;
+        requestRender();
+    }
+
+    function checkVisibility() {
+        const visible = inViewport && document.visibilityState === 'visible';
+        if (visible === showing) return;
+        showing = visible;
+        if (showing) {
+            play();
+        } else {
+            animation = undefined;
+            if (frameId !== undefined) cancelAnimationFrame(frameId);
+            frameId = undefined;
+            replay.disabled = false;
+        }
+    }
+
+    // Let Plotly highlight the selected button, then apply its scale on the next frame.
+    plot.on('plotly_buttonclicked', ({ active }) => {
+        if (!units[active]) return;
+        unitIndex = active;
+        axisNeedsUpdate = true;
+        requestRender();
+    });
+    replay.addEventListener('click', play);
+    document.addEventListener('visibilitychange', checkVisibility);
+    new IntersectionObserver(([entry]) => {
+        inViewport = entry.isIntersecting && entry.intersectionRatio >= 0.5;
+        checkVisibility();
+    }, { threshold: 0.5 }).observe(document.querySelector('.stage'));
+}
+
+const chartReady = Plotly.newPlot(
+        "comparacao-plotly",
+        [{"cliponaxis":false,"customdata":[["645 milhões","7,8%"],["2,1 bilhões","25,8%"],["2,69 bilhões","32,7%"]],"hovertemplate":"\u003cb>%{y}\u003c/b>\u003cbr>Pessoas: %{customdata[0]}\u003cbr>Parcela da população: %{customdata[1]}\u003cextra>\u003c/extra>","marker":{"color":["#D96650","#C49037","#118D80"]},"name":"Número de pessoas","orientation":"h","text":["0 milhões","0 milhões","0 milhões"],"textfont":{"color":"#172338","size":23},"textposition":"outside","x":[0,0,0],"y":["Fome","Insegurança alimentar\nmoderada ou grave","Dieta saudável\neconomicamente inacessível"],"type":"bar"}],
+        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"font":{"family":"Arial, sans-serif","color":"#172338","size":20},"margin":{"l":265,"r":145,"t":75,"b":75},"xaxis":{"range":[0,3.35],"title":{"text":"Pessoas (bilhões)"},"gridcolor":"#E7ECF1","zeroline":false,"ticksuffix":" bi"},"yaxis":{"tickfont":{"size":21},"autorange":"reversed","automargin":true},"hoverlabel":{"font":{"size":19}},"paper_bgcolor":"#F8FAFC","plot_bgcolor":"#F8FAFC","bargap":0.48,"showlegend":false,"updatemenus":[{"buttons":[{"args":[{"x":[[0.645,2.1,2.69]],"text":[["645 milhões","2,1 bilhões","2,69 bilhões"]]},{"xaxis":{"range":[0,3.35],"title":"Pessoas (bilhões)","gridcolor":"#E7ECF1","zeroline":false,"ticksuffix":" bi"}}],"label":"Pessoas (bilhões)","method":"skip"},{"args":[{"x":[[7.8,25.8,32.7]],"text":[["7,8%","25,8%","32,7%"]]},{"xaxis":{"range":[0,38],"title":"Proporção da população mundial (%)","gridcolor":"#E7ECF1","zeroline":false,"ticksuffix":"%"}}],"label":"Prevalência (%)","method":"skip"}],"direction":"right","showactive":true,"type":"buttons","x":0.01,"xanchor":"left","y":1.2,"yanchor":"top"}]},
+        {"displayModeBar":true,"displaylogo":false,"responsive":true,"modeBarButtonsToRemove":["lasso2d","select2d","toImage"]}
+);
+document.addEventListener('DOMContentLoaded', () => {
+    chartReady.then(setupComparisonEntrance);
+}, { once: true });
+</script>        </div></div>
+<footer class="bottom"><span>Fonte: FAO et al., SOFI 2026 · Dados de 2025</span><span>Os indicadores podem se sobrepor; não some os totais.</span>
+<button class="replay" id="replay-animation" type="button" disabled>Repetir animação</button></footer></div>
 </body></html>
